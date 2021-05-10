@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21729B72260B75F400FB9B48 /* NewAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21729B71260B75F400FB9B48 /* NewAlarm.swift */; };
+		21729B77260B8DA400FB9B48 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21729B76260B8DA400FB9B48 /* TabBar.swift */; };
+		217742F42629E2E200AAC834 /* SavedNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217742F32629E2E200AAC834 /* SavedNotes.swift */; };
+		21877B672647915500A3C68C /* UserTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21877B662647915500A3C68C /* UserTables.swift */; };
+		21877B69264799B100A3C68C /* EditUserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21877B68264799B100A3C68C /* EditUserTable.swift */; };
+		21877B6B26489A8500A3C68C /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21877B6A26489A8500A3C68C /* AddEntryView.swift */; };
+		21AD401A2639820C005F73F8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2108D0F52638EB0200739B8B /* SQLite.framework */; };
+		21AD401B2639820C005F73F8 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2108D0F52638EB0200739B8B /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21AD576E26101BC9003A9F80 /* BrotherModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21AD576C26101BC9003A9F80 /* BrotherModel.xcdatamodeld */; };
+		21AD578026123BCA003A9F80 /* report-3-30-2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AD577F26123BCA003A9F80 /* report-3-30-2021.swift */; };
+		21D1F97C260E3D5E0023B531 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D1F97B260E3D5E0023B531 /* HomeScreen.swift */; };
+		21E0F13626093F9D0028291E /* BrotherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F13526093F9D0028291E /* BrotherAppApp.swift */; };
+		21E0F13826093F9D0028291E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F13726093F9D0028291E /* ContentView.swift */; };
+		21E0F13A26093F9E0028291E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E0F13926093F9E0028291E /* Assets.xcassets */; };
+		21E0F13D26093F9E0028291E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E0F13C26093F9E0028291E /* Preview Assets.xcassets */; };
+		21E0F14826093F9E0028291E /* BrotherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F14726093F9E0028291E /* BrotherAppTests.swift */; };
+		21E0F15326093F9E0028291E /* BrotherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F15226093F9E0028291E /* BrotherAppUITests.swift */; };
+		21E0F16526093FEA0028291E /* CalendarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F16426093FEA0028291E /* CalendarEvents.swift */; };
+		21E0F16F2609403A0028291E /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F16E2609403A0028291E /* AddEvent.swift */; };
+		21E0F1772609405A0028291E /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F1762609405A0028291E /* AlarmView.swift */; };
+		21E0F17C2609406A0028291E /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F17B2609406A0028291E /* NewNote.swift */; };
+		21E0F1812609407F0028291E /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F1802609407F0028291E /* UserSettings.swift */; };
+		21E0F186260940A70028291E /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F185260940A70028291E /* Notes.swift */; };
+		21E0F18B260940BD0028291E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F18A260940BD0028291E /* Weather.swift */; };
+		21E0F1902609417A0028291E /* PersonalSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F18F2609417A0028291E /* PersonalSchedule.swift */; };
+		21E0F19A260962170028291E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F199260962170028291E /* Notifications.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2108D0F42638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		2108D0F62638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		2108D0F82638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		2108D0FA2638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		2108D0FC2638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		2108D0FE2638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		2108D1002638EB0200739B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		21E0F14426093F9E0028291E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E0F12A26093F9D0028291E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E0F13126093F9D0028291E;
+			remoteInfo = BrotherApp;
+		};
+		21E0F14F26093F9E0028291E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E0F12A26093F9D0028291E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E0F13126093F9D0028291E;
+			remoteInfo = BrotherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21AD401C2639820C005F73F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21AD401B2639820C005F73F8 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		21729B71260B75F400FB9B48 /* NewAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlarm.swift; sourceTree = "<group>"; };
+		21729B76260B8DA400FB9B48 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		217742F32629E2E200AAC834 /* SavedNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNotes.swift; sourceTree = "<group>"; };
+		21877B662647915500A3C68C /* UserTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTables.swift; sourceTree = "<group>"; };
+		21877B68264799B100A3C68C /* EditUserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserTable.swift; sourceTree = "<group>"; };
+		21877B6A26489A8500A3C68C /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		21AD576D26101BC9003A9F80 /* BrotherModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrotherModel.xcdatamodel; sourceTree = "<group>"; };
+		21AD577F26123BCA003A9F80 /* report-3-30-2021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "report-3-30-2021.swift"; sourceTree = "<group>"; };
+		21D1F97B260E3D5E0023B531 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		21E0F13226093F9D0028291E /* BrotherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrotherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E0F13526093F9D0028291E /* BrotherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrotherAppApp.swift; sourceTree = "<group>"; };
+		21E0F13726093F9D0028291E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21E0F13926093F9E0028291E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21E0F13C26093F9E0028291E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21E0F13E26093F9E0028291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E0F14326093F9E0028291E /* BrotherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrotherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E0F14726093F9E0028291E /* BrotherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrotherAppTests.swift; sourceTree = "<group>"; };
+		21E0F14926093F9E0028291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E0F14E26093F9E0028291E /* BrotherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrotherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E0F15226093F9E0028291E /* BrotherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrotherAppUITests.swift; sourceTree = "<group>"; };
+		21E0F15426093F9E0028291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E0F16426093FEA0028291E /* CalendarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvents.swift; sourceTree = "<group>"; };
+		21E0F16E2609403A0028291E /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
+		21E0F1762609405A0028291E /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		21E0F17B2609406A0028291E /* NewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		21E0F1802609407F0028291E /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		21E0F185260940A70028291E /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		21E0F18A260940BD0028291E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		21E0F18F2609417A0028291E /* PersonalSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalSchedule.swift; sourceTree = "<group>"; };
+		21E0F199260962170028291E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21E0F12F26093F9D0028291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AD401A2639820C005F73F8 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F14026093F9E0028291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F14B26093F9E0028291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2108D0EB2638EB0200739B8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2108D0F52638EB0200739B8B /* SQLite.framework */,
+				2108D0F72638EB0200739B8B /* SQLiteTests iOS.xctest */,
+				2108D0F92638EB0200739B8B /* SQLite.framework */,
+				2108D0FB2638EB0200739B8B /* SQLiteTests Mac.xctest */,
+				2108D0FD2638EB0200739B8B /* SQLite.framework */,
+				2108D0FF2638EB0200739B8B /* SQLiteTests tvOS.xctest */,
+				2108D1012638EB0200739B8B /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		217742F22629E2B500AAC834 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				217742F32629E2E200AAC834 /* SavedNotes.swift */,
+				21877B662647915500A3C68C /* UserTables.swift */,
+				21877B68264799B100A3C68C /* EditUserTable.swift */,
+				21877B6A26489A8500A3C68C /* AddEntryView.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		21AD40122639820C005F73F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21AD577E26123B81003A9F80 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				21AD577F26123BCA003A9F80 /* report-3-30-2021.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		21E0F12926093F9D0028291E = {
+			isa = PBXGroup;
+			children = (
+				2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */,
+				21E0F13426093F9D0028291E /* BrotherApp */,
+				21E0F14626093F9E0028291E /* BrotherAppTests */,
+				21E0F15126093F9E0028291E /* BrotherAppUITests */,
+				21E0F13326093F9D0028291E /* Products */,
+				21AD40122639820C005F73F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21E0F13326093F9D0028291E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F13226093F9D0028291E /* BrotherApp.app */,
+				21E0F14326093F9E0028291E /* BrotherAppTests.xctest */,
+				21E0F14E26093F9E0028291E /* BrotherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21E0F13426093F9D0028291E /* BrotherApp */ = {
+			isa = PBXGroup;
+			children = (
+				217742F22629E2B500AAC834 /* UserData */,
+				21AD577E26123B81003A9F80 /* Reports */,
+				21E0F13526093F9D0028291E /* BrotherAppApp.swift */,
+				21E0F13926093F9E0028291E /* Assets.xcassets */,
+				21729B76260B8DA400FB9B48 /* TabBar.swift */,
+				21D1F97B260E3D5E0023B531 /* HomeScreen.swift */,
+				21E0F13726093F9D0028291E /* ContentView.swift */,
+				21AD576C26101BC9003A9F80 /* BrotherModel.xcdatamodeld */,
+				21E0F16D260940130028291E /* Notes */,
+				21E0F16C2609400A0028291E /* Alarms */,
+				21E0F16326093FBD0028291E /* Calendar */,
+				21E0F1802609407F0028291E /* UserSettings.swift */,
+				21E0F18A260940BD0028291E /* Weather.swift */,
+				21E0F18F2609417A0028291E /* PersonalSchedule.swift */,
+				21E0F199260962170028291E /* Notifications.swift */,
+				21E0F13E26093F9E0028291E /* Info.plist */,
+				21E0F13B26093F9E0028291E /* Preview Content */,
+			);
+			path = BrotherApp;
+			sourceTree = "<group>";
+		};
+		21E0F13B26093F9E0028291E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F13C26093F9E0028291E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21E0F14626093F9E0028291E /* BrotherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F14726093F9E0028291E /* BrotherAppTests.swift */,
+				21E0F14926093F9E0028291E /* Info.plist */,
+			);
+			path = BrotherAppTests;
+			sourceTree = "<group>";
+		};
+		21E0F15126093F9E0028291E /* BrotherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F15226093F9E0028291E /* BrotherAppUITests.swift */,
+				21E0F15426093F9E0028291E /* Info.plist */,
+			);
+			path = BrotherAppUITests;
+			sourceTree = "<group>";
+		};
+		21E0F16326093FBD0028291E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F16426093FEA0028291E /* CalendarEvents.swift */,
+				21E0F16E2609403A0028291E /* AddEvent.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		21E0F16C2609400A0028291E /* Alarms */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F1762609405A0028291E /* AlarmView.swift */,
+				21729B71260B75F400FB9B48 /* NewAlarm.swift */,
+			);
+			path = Alarms;
+			sourceTree = "<group>";
+		};
+		21E0F16D260940130028291E /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F185260940A70028291E /* Notes.swift */,
+				21E0F17B2609406A0028291E /* NewNote.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21E0F13126093F9D0028291E /* BrotherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E0F15726093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherApp" */;
+			buildPhases = (
+				21E0F12E26093F9D0028291E /* Sources */,
+				21E0F12F26093F9D0028291E /* Frameworks */,
+				21E0F13026093F9D0028291E /* Resources */,
+				21AD401C2639820C005F73F8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrotherApp;
+			productName = BrotherApp;
+			productReference = 21E0F13226093F9D0028291E /* BrotherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21E0F14226093F9E0028291E /* BrotherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E0F15A26093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherAppTests" */;
+			buildPhases = (
+				21E0F13F26093F9E0028291E /* Sources */,
+				21E0F14026093F9E0028291E /* Frameworks */,
+				21E0F14126093F9E0028291E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21E0F14526093F9E0028291E /* PBXTargetDependency */,
+			);
+			name = BrotherAppTests;
+			productName = BrotherAppTests;
+			productReference = 21E0F14326093F9E0028291E /* BrotherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21E0F14D26093F9E0028291E /* BrotherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E0F15D26093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherAppUITests" */;
+			buildPhases = (
+				21E0F14A26093F9E0028291E /* Sources */,
+				21E0F14B26093F9E0028291E /* Frameworks */,
+				21E0F14C26093F9E0028291E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21E0F15026093F9E0028291E /* PBXTargetDependency */,
+			);
+			name = BrotherAppUITests;
+			productName = BrotherAppUITests;
+			productReference = 21E0F14E26093F9E0028291E /* BrotherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21E0F12A26093F9D0028291E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					21E0F13126093F9D0028291E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					21E0F14226093F9E0028291E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 21E0F13126093F9D0028291E;
+					};
+					21E0F14D26093F9E0028291E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 21E0F13126093F9D0028291E;
+					};
+				};
+			};
+			buildConfigurationList = 21E0F12D26093F9D0028291E /* Build configuration list for PBXProject "BrotherApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21E0F12926093F9D0028291E;
+			productRefGroup = 21E0F13326093F9D0028291E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2108D0EB2638EB0200739B8B /* Products */;
+					ProjectRef = 2108D0EA2638EB0200739B8B /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				21E0F13126093F9D0028291E /* BrotherApp */,
+				21E0F14226093F9E0028291E /* BrotherAppTests */,
+				21E0F14D26093F9E0028291E /* BrotherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2108D0F52638EB0200739B8B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2108D0F42638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D0F72638EB0200739B8B /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 2108D0F62638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D0F92638EB0200739B8B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2108D0F82638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D0FB2638EB0200739B8B /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 2108D0FA2638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D0FD2638EB0200739B8B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2108D0FC2638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D0FF2638EB0200739B8B /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 2108D0FE2638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2108D1012638EB0200739B8B /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 2108D1002638EB0200739B8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21E0F13026093F9D0028291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E0F13D26093F9E0028291E /* Preview Assets.xcassets in Resources */,
+				21E0F13A26093F9E0028291E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F14126093F9E0028291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F14C26093F9E0028291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21E0F12E26093F9D0028291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E0F19A260962170028291E /* Notifications.swift in Sources */,
+				21E0F17C2609406A0028291E /* NewNote.swift in Sources */,
+				21D1F97C260E3D5E0023B531 /* HomeScreen.swift in Sources */,
+				21E0F16F2609403A0028291E /* AddEvent.swift in Sources */,
+				21E0F13826093F9D0028291E /* ContentView.swift in Sources */,
+				21E0F1772609405A0028291E /* AlarmView.swift in Sources */,
+				21E0F18B260940BD0028291E /* Weather.swift in Sources */,
+				21E0F1812609407F0028291E /* UserSettings.swift in Sources */,
+				21877B69264799B100A3C68C /* EditUserTable.swift in Sources */,
+				21729B72260B75F400FB9B48 /* NewAlarm.swift in Sources */,
+				21E0F1902609417A0028291E /* PersonalSchedule.swift in Sources */,
+				21877B6B26489A8500A3C68C /* AddEntryView.swift in Sources */,
+				21E0F16526093FEA0028291E /* CalendarEvents.swift in Sources */,
+				21E0F13626093F9D0028291E /* BrotherAppApp.swift in Sources */,
+				21E0F186260940A70028291E /* Notes.swift in Sources */,
+				21877B672647915500A3C68C /* UserTables.swift in Sources */,
+				21AD576E26101BC9003A9F80 /* BrotherModel.xcdatamodeld in Sources */,
+				21729B77260B8DA400FB9B48 /* TabBar.swift in Sources */,
+				217742F42629E2E200AAC834 /* SavedNotes.swift in Sources */,
+				21AD578026123BCA003A9F80 /* report-3-30-2021.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F13F26093F9E0028291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E0F14826093F9E0028291E /* BrotherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E0F14A26093F9E0028291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E0F15326093F9E0028291E /* BrotherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21E0F14526093F9E0028291E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E0F13126093F9D0028291E /* BrotherApp */;
+			targetProxy = 21E0F14426093F9E0028291E /* PBXContainerItemProxy */;
+		};
+		21E0F15026093F9E0028291E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E0F13126093F9D0028291E /* BrotherApp */;
+			targetProxy = 21E0F14F26093F9E0028291E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21E0F15526093F9E0028291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21E0F15626093F9E0028291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21E0F15826093F9E0028291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrotherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BrotherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21E0F15926093F9E0028291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BrotherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BrotherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21E0F15B26093F9E0028291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				INFOPLIST_FILE = BrotherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrotherApp.app/BrotherApp";
+			};
+			name = Debug;
+		};
+		21E0F15C26093F9E0028291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				INFOPLIST_FILE = BrotherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrotherApp.app/BrotherApp";
+			};
+			name = Release;
+		};
+		21E0F15E26093F9E0028291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				INFOPLIST_FILE = BrotherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrotherApp;
+			};
+			name = Debug;
+		};
+		21E0F15F26093F9E0028291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JW5BAZ8R5;
+				INFOPLIST_FILE = BrotherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "N-A.BrotherAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BrotherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21E0F12D26093F9D0028291E /* Build configuration list for PBXProject "BrotherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E0F15526093F9E0028291E /* Debug */,
+				21E0F15626093F9E0028291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E0F15726093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E0F15826093F9E0028291E /* Debug */,
+				21E0F15926093F9E0028291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E0F15A26093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E0F15B26093F9E0028291E /* Debug */,
+				21E0F15C26093F9E0028291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E0F15D26093F9E0028291E /* Build configuration list for PBXNativeTarget "BrotherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E0F15E26093F9E0028291E /* Debug */,
+				21E0F15F26093F9E0028291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21AD576C26101BC9003A9F80 /* BrotherModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21AD576D26101BC9003A9F80 /* BrotherModel.xcdatamodel */,
+			);
+			currentVersion = 21AD576D26101BC9003A9F80 /* BrotherModel.xcdatamodel */;
+			path = BrotherModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21E0F12A26093F9D0028291E /* Project object */;
+}
